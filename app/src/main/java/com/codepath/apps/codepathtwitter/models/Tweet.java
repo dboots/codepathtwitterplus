@@ -1,5 +1,7 @@
 package com.codepath.apps.codepathtwitter.models;
 
+import android.text.format.DateUtils;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
