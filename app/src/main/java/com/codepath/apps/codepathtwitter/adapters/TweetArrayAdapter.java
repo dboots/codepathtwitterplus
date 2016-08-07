@@ -28,22 +28,14 @@ public class TweetArrayAdapter extends ArrayAdapter<Tweet> {
     public View getView(int position, View convertView, ViewGroup parent) {
         Tweet tweet = getItem(position);
         ViewHolder viewHolder;
-        ImageView ivProfileImage;
-        TextView tvUsername;
-        TextView tvBody;
-        TextView tvCreatedAt;
-
-        SimpleDateFormat dateFormat = new SimpleDateFormat("EEE MMM dd HH:mm:ss ZZZZZ yyyy", Locale.ENGLISH);
-        dateFormat.setLenient(true);
-        Date createdAt = new Date();
-        String relativeCreatedAt;
 
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_tweet, parent, false);
 
             viewHolder = new ViewHolder();
             viewHolder.ivImage = (ImageView) convertView.findViewById(R.id.ivImage);
-            viewHolder.tvUsername = (TextView) convertView.findViewById(R.id.tvUsername);
+            viewHolder.tvScreenName = (TextView) convertView.findViewById(R.id.tvScreenName);
+            viewHolder.tvName = (TextView) convertView.findViewById(R.id.tvName);
             viewHolder.tvCreatedAt = (TextView) convertView.findViewById(R.id.tvCreatedAt);
             viewHolder.tvBody = (TextView) convertView.findViewById(R.id.tvBody);
 
@@ -52,17 +44,10 @@ public class TweetArrayAdapter extends ArrayAdapter<Tweet> {
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
-        try {
-            createdAt = dateFormat.parse(tweet.getCreatedAt());
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-
-        relativeCreatedAt = DateUtils.getRelativeDateTimeString(getContext(), createdAt.getTime(), DateUtils.DAY_IN_MILLIS, DateUtils.WEEK_IN_MILLIS, 0).toString();
-
         viewHolder.ivImage.setImageResource(0);
-        viewHolder.tvUsername.setText(tweet.getUser().getScreenName() + " at " + tweet.getCreatedAt());
-        viewHolder.tvCreatedAt.setText(relativeCreatedAt);
+        viewHolder.tvScreenName.setText(tweet.getUser().getScreenName());
+        viewHolder.tvName.setText(tweet.getUser().getName());
+        viewHolder.tvCreatedAt.setText(tweet.getRelativeCreatedAt());
 
         viewHolder.tvBody.setText(tweet.getBody());
 
@@ -73,7 +58,8 @@ public class TweetArrayAdapter extends ArrayAdapter<Tweet> {
 
     public static class ViewHolder {
         ImageView ivImage;
-        TextView tvUsername;
+        TextView tvScreenName;
+        TextView tvName;
         TextView tvCreatedAt;
         TextView tvBody;
     }

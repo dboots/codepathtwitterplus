@@ -3,5 +3,7 @@
 
     <string name="app_name">CodePath Twitter</string>
     <string name="login_label">Login with Twitter</string>
+    <string name="compose_tweet">Compose Tweet</string>
+    <string name="cancel">Cancel</string>
 
 </resources>
