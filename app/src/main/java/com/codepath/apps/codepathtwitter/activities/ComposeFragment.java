@@ -10,39 +10,35 @@ import android.widget.EditText;
 
 import com.codepath.apps.codepathtwitter.R;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 public class ComposeFragment extends DialogFragment {
     public interface FilterDialogListener {
         void onFinishEditDialog(String status);
     }
 
-    Button btnCancel;
-    Button btnCompose;
-    EditText etStatus;
+    @BindView(R.id.btnCompose) Button btnCompose;
+    @BindView(R.id.btnCancel) Button btnCancel;
+    @BindView(R.id.etStatus) EditText etStatus;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.activity_compose, container);
-
-        btnCancel = (Button) view.findViewById(R.id.btnCancel);
-        btnCompose = (Button) view.findViewById(R.id.btnCompose);
-        etStatus = (EditText) view.findViewById(R.id.etStatus);
-
-        btnCancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dismiss();
-            }
-        });
-
-        btnCompose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FilterDialogListener listener = (FilterDialogListener) getActivity();
-                listener.onFinishEditDialog(etStatus.getText().toString());
-                dismiss();
-            }
-        });
-
+        ButterKnife.bind(this, view);
         return view;
+    }
+
+    @OnClick(R.id.btnCancel)
+    public void cancel(Button btn) {
+        dismiss();
+    }
+
+    @OnClick(R.id.btnCompose)
+    public void compose(Button btn) {
+        FilterDialogListener listener = (FilterDialogListener) getActivity();
+        listener.onFinishEditDialog(etStatus.getText().toString());
+        dismiss();
     }
 }

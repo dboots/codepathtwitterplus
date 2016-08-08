@@ -25,13 +25,16 @@ import org.scribe.builder.api.TwitterApi;
 
 import java.util.ArrayList;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import cz.msebera.android.httpclient.Header;
 
 public class TimelineActivity extends AppCompatActivity implements ComposeFragment.FilterDialogListener {
+    @BindView(R.id.lvTweets) ListView lvTweets;
+
     private RestClient client;
     private ArrayList<Tweet> tweets;
     private TweetArrayAdapter adapterTweets;
-    private ListView lvTweets;
     private int timelinePage = 1;
     private ComposeFragment composeFragment;
     private FragmentManager fm;
@@ -40,10 +43,10 @@ public class TimelineActivity extends AppCompatActivity implements ComposeFragme
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timeline);
+        ButterKnife.bind(this);
 
         fm = getSupportFragmentManager();
 
-        lvTweets = (ListView) findViewById(R.id.lvTweets);
         tweets = new ArrayList<Tweet>();
         adapterTweets = new TweetArrayAdapter(this, tweets);
         lvTweets.setAdapter(adapterTweets);

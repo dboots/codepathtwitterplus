@@ -19,6 +19,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class TweetArrayAdapter extends ArrayAdapter<Tweet> {
     public TweetArrayAdapter(Context context, ArrayList<Tweet> tweets) {
         super(context, android.R.layout.simple_list_item_1, tweets);
@@ -32,13 +35,7 @@ public class TweetArrayAdapter extends ArrayAdapter<Tweet> {
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_tweet, parent, false);
 
-            viewHolder = new ViewHolder();
-            viewHolder.ivImage = (ImageView) convertView.findViewById(R.id.ivImage);
-            viewHolder.tvScreenName = (TextView) convertView.findViewById(R.id.tvScreenName);
-            viewHolder.tvName = (TextView) convertView.findViewById(R.id.tvName);
-            viewHolder.tvCreatedAt = (TextView) convertView.findViewById(R.id.tvCreatedAt);
-            viewHolder.tvBody = (TextView) convertView.findViewById(R.id.tvBody);
-
+            viewHolder = new ViewHolder(convertView);
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
@@ -57,10 +54,14 @@ public class TweetArrayAdapter extends ArrayAdapter<Tweet> {
     }
 
     public static class ViewHolder {
-        ImageView ivImage;
-        TextView tvScreenName;
-        TextView tvName;
-        TextView tvCreatedAt;
-        TextView tvBody;
+        @BindView(R.id.ivImage) ImageView ivImage;
+        @BindView(R.id.tvScreenName) TextView tvScreenName;
+        @BindView(R.id.tvName) TextView tvName;
+        @BindView(R.id.tvCreatedAt) TextView tvCreatedAt;
+        @BindView(R.id.tvBody) TextView tvBody;
+
+        public ViewHolder(View view) {
+            ButterKnife.bind(this, view);
+        }
     }
 }
