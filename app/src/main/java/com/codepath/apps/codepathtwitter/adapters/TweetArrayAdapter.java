@@ -3,6 +3,7 @@ package com.codepath.apps.codepathtwitter.adapters;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+
 import android.text.format.DateUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -48,7 +49,6 @@ public class TweetArrayAdapter extends ArrayAdapter<Tweet> {
         viewHolder.tvScreenName.setText(tweet.getUser().getScreenName());
         viewHolder.tvName.setText(tweet.getUser().getName());
         viewHolder.tvCreatedAt.setText(tweet.getRelativeCreatedAt());
-
         viewHolder.ivImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

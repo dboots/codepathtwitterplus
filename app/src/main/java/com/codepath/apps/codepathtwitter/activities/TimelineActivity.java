@@ -1,41 +1,31 @@
 package com.codepath.apps.codepathtwitter.activities;
 
 import android.content.Intent;
-import android.provider.ContactsContract;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ListView;
 import android.widget.Toast;
-
 import com.astuetz.PagerSlidingTabStrip;
-import com.codepath.apps.codepathtwitter.EndlessScrollListener;
 import com.codepath.apps.codepathtwitter.R;
 import com.codepath.apps.codepathtwitter.RestApplication;
 import com.codepath.apps.codepathtwitter.RestClient;
 import com.codepath.apps.codepathtwitter.adapters.TweetArrayAdapter;
 import com.codepath.apps.codepathtwitter.fragments.HomeTimelineFragment;
 import com.codepath.apps.codepathtwitter.fragments.MentionsTimelineFragment;
-import com.codepath.apps.codepathtwitter.fragments.TweetListFragment;
+
 import com.codepath.apps.codepathtwitter.models.Tweet;
-import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
-import org.scribe.builder.api.TwitterApi;
 
 import java.util.ArrayList;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 import cz.msebera.android.httpclient.Header;
 
@@ -44,8 +34,6 @@ public class TimelineActivity extends AppCompatActivity implements ComposeFragme
     private RestClient client;
     private FragmentManager fm;
     private ArrayList<Tweet> tweets;
-    private TweetListFragment tweetFragment;
-    private TweetArrayAdapter adapterTweets;
     PagerSlidingTabStrip tabStrip;
     ViewPager vp;
 
@@ -62,8 +50,6 @@ public class TimelineActivity extends AppCompatActivity implements ComposeFragme
 
         client = RestApplication.getRestClient();
         fm = getSupportFragmentManager();
-        tweets = new ArrayList<Tweet>();
-        adapterTweets = new TweetArrayAdapter(this, tweets);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -87,8 +73,7 @@ public class TimelineActivity extends AppCompatActivity implements ComposeFragme
         client.composeTweet(status, new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject jsonObject) {
-                vp.setAdapter(new TweetPagerAdapter(getSupportFragmentManager()));
-                tabStrip.setViewPager(vp);
+
             }
 
             @Override
@@ -109,14 +94,6 @@ public class TimelineActivity extends AppCompatActivity implements ComposeFragme
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         return super.onOptionsItemSelected(item);
-    }
-
-    public void menuCompose(MenuItem item) {
-        Bundle bundle = new Bundle();
-
-        composeFragment = new ComposeFragment();
-        composeFragment.setArguments(bundle);
-        composeFragment.show(fm, "activity_compose");
     }
 
     public class TweetPagerAdapter extends FragmentStatePagerAdapter {

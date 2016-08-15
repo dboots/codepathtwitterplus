@@ -41,7 +41,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.TimelineActivity"></activity>
+<<<<<<< HEAD
         <activity android:name=".activities.ProfileActivity"></activity>
+=======
+>>>>>>> 7b862dd07ee6836d9a786a259ec2509dfd7b3664
     </application>
 
 </manifest>

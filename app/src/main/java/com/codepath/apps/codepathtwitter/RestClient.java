@@ -70,7 +70,6 @@ public class RestClient extends OAuthBaseClient {
         params.put("status", String.valueOf(status));
         getClient().post(apiUrl, params, handler);
     }
-
     public void getUserTimeline(int page, String screenName, AsyncHttpResponseHandler handler) {
         String apiUrl = getApiUrl("statuses/user_timeline.json");
         RequestParams params = new RequestParams();

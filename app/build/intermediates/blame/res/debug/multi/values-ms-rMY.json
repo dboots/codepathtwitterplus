@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "outputFile": "/Users/don/Documents/projects/Labs/Android/codepathtwitterplus/app/build/intermediates/res/merged/debug/values-ms-rMY/values-ms-rMY.xml",
         "map": [
             {
@@ -385,6 +386,8 @@
         ]
     },
     {
+=======
+>>>>>>> 7b862dd07ee6836d9a786a259ec2509dfd7b3664
         "outputFile": "/Users/don/Documents/projects/Labs/Android/CodePathTwitter/app/build/intermediates/res/merged/debug/values-ms-rMY/values-ms-rMY.xml",
         "map": [
             {

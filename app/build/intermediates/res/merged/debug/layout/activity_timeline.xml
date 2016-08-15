@@ -18,6 +18,7 @@
         android:layout_alignParentStart="true">
     </android.support.v7.widget.Toolbar>
 
+<<<<<<< HEAD
     <com.astuetz.PagerSlidingTabStrip
         android:id="@+id/tabs"
         android:layout_below="@+id/toolbar"
@@ -34,4 +35,13 @@
         android:background="@android:color/white" />
 
 
+=======
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvTweets"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+>>>>>>> 7b862dd07ee6836d9a786a259ec2509dfd7b3664
 </RelativeLayout>

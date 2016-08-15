@@ -4,14 +4,18 @@
         "source": "/Users/don/Documents/projects/Labs/Android/CodePathTwitter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_default.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "/Users/don/Documents/projects/Labs/Android/codepathtwitterplus/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
         "source": "/Users/don/Documents/projects/Labs/Android/codepathtwitterplus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_btn_colored_borderless_text_material.xml"
     },
     {
+=======
+>>>>>>> 7b862dd07ee6836d9a786a259ec2509dfd7b3664
         "merged": "/Users/don/Documents/projects/Labs/Android/CodePathTwitter/app/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
         "source": "/Users/don/Documents/projects/Labs/Android/CodePathTwitter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_seek_thumb.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "/Users/don/Documents/projects/Labs/Android/codepathtwitterplus/app/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
         "source": "/Users/don/Documents/projects/Labs/Android/codepathtwitterplus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_spinner.xml"
     },
@@ -28,6 +32,8 @@
         "source": "/Users/don/Documents/projects/Labs/Android/codepathtwitterplus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_edittext.xml"
     },
     {
+=======
+>>>>>>> 7b862dd07ee6836d9a786a259ec2509dfd7b3664
         "merged": "/Users/don/Documents/projects/Labs/Android/CodePathTwitter/app/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
         "source": "/Users/don/Documents/projects/Labs/Android/CodePathTwitter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_spinner.xml"
     },
@@ -36,14 +42,18 @@
         "source": "/Users/don/Documents/projects/Labs/Android/CodePathTwitter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_btn_checkable.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "/Users/don/Documents/projects/Labs/Android/codepathtwitterplus/app/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
         "source": "/Users/don/Documents/projects/Labs/Android/codepathtwitterplus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_seek_thumb.xml"
     },
     {
+=======
+>>>>>>> 7b862dd07ee6836d9a786a259ec2509dfd7b3664
         "merged": "/Users/don/Documents/projects/Labs/Android/CodePathTwitter/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
         "source": "/Users/don/Documents/projects/Labs/Android/CodePathTwitter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_switch_thumb.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "/Users/don/Documents/projects/Labs/Android/codepathtwitterplus/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
         "source": "/Users/don/Documents/projects/Labs/Android/codepathtwitterplus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_switch_thumb.xml"
     },
@@ -52,6 +62,8 @@
         "source": "/Users/don/Documents/projects/Labs/Android/codepathtwitterplus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_default.xml"
     },
     {
+=======
+>>>>>>> 7b862dd07ee6836d9a786a259ec2509dfd7b3664
         "merged": "/Users/don/Documents/projects/Labs/Android/CodePathTwitter/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
         "source": "/Users/don/Documents/projects/Labs/Android/CodePathTwitter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_switch_track.xml"
     },
@@ -60,10 +72,13 @@
         "source": "/Users/don/Documents/projects/Labs/Android/CodePathTwitter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_btn_colored_borderless_text_material.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "/Users/don/Documents/projects/Labs/Android/codepathtwitterplus/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
         "source": "/Users/don/Documents/projects/Labs/Android/codepathtwitterplus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_color_highlight_material.xml"
     },
     {
+=======
+>>>>>>> 7b862dd07ee6836d9a786a259ec2509dfd7b3664
         "merged": "/Users/don/Documents/projects/Labs/Android/CodePathTwitter/app/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
         "source": "/Users/don/Documents/projects/Labs/Android/CodePathTwitter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_edittext.xml"
     },

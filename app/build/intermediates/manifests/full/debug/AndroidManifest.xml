@@ -45,7 +45,10 @@
             </intent-filter>
         </activity>
         <activity android:name="com.codepath.apps.codepathtwitter.activities.TimelineActivity" />
+<<<<<<< HEAD
         <activity android:name="com.codepath.apps.codepathtwitter.activities.ProfileActivity" />
+=======
+>>>>>>> 7b862dd07ee6836d9a786a259ec2509dfd7b3664
     </application>
 
 </manifest>

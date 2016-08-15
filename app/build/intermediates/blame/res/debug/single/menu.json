@@ -2,9 +2,12 @@
     {
         "merged": "/Users/don/Documents/projects/Labs/Android/CodePathTwitter/app/build/intermediates/res/merged/debug/menu/menu_timeline.xml",
         "source": "/Users/don/Documents/projects/Labs/Android/CodePathTwitter/app/src/main/res/menu/menu_timeline.xml"
+<<<<<<< HEAD
     },
     {
         "merged": "/Users/don/Documents/projects/Labs/Android/codepathtwitterplus/app/build/intermediates/res/merged/debug/menu/menu_timeline.xml",
         "source": "/Users/don/Documents/projects/Labs/Android/codepathtwitterplus/app/src/main/res/menu/menu_timeline.xml"
+=======
+>>>>>>> 7b862dd07ee6836d9a786a259ec2509dfd7b3664
     }
 ]

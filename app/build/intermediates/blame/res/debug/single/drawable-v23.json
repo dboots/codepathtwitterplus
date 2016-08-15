@@ -2,9 +2,12 @@
     {
         "merged": "/Users/don/Documents/projects/Labs/Android/CodePathTwitter/app/build/intermediates/res/merged/debug/drawable-v23/abc_control_background_material.xml",
         "source": "/Users/don/Documents/projects/Labs/Android/CodePathTwitter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-v23/abc_control_background_material.xml"
+<<<<<<< HEAD
     },
     {
         "merged": "/Users/don/Documents/projects/Labs/Android/codepathtwitterplus/app/build/intermediates/res/merged/debug/drawable-v23/abc_control_background_material.xml",
         "source": "/Users/don/Documents/projects/Labs/Android/codepathtwitterplus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-v23/abc_control_background_material.xml"
+=======
+>>>>>>> 7b862dd07ee6836d9a786a259ec2509dfd7b3664
     }
 ]

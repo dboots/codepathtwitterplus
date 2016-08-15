@@ -155,6 +155,7 @@
                 }
             }
         ]
+<<<<<<< HEAD
     },
     {
         "outputFile": "/Users/don/Documents/projects/Labs/Android/codepathtwitterplus/app/build/intermediates/res/merged/debug/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -312,5 +313,7 @@
                 }
             }
         ]
+=======
+>>>>>>> 7b862dd07ee6836d9a786a259ec2509dfd7b3664
     }
 ]

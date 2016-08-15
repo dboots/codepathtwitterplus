@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto"
+<<<<<<< HEAD
       xmlns:tools="http://schemas.android.com/tools" tools:context=".activities.TimelineActivity">
 
 
@@ -17,4 +18,25 @@
         app:showAsAction="ifRoom"
         android:title="Profile"
         android:onClick="OnProfileView"/>
+=======
+      xmlns:tools="http://schemas.android.com/tools" tools:context=".BookSearchActivity">
+
+    <!--
+    <item android:id="@+id/action_search"
+          android:orderInCategory="5"
+          android:title="Search"
+          android:icon="@android:drawable/ic_menu_search"
+          app:showAsAction="ifRoom|collapseActionView"
+          app:actionViewClass="android.support.v7.widget.SearchView" />
+
+    -->
+
+    <item
+        android:id="@+id/miSettings"
+        android:icon="@drawable/tweet"
+        app:showAsAction="always"
+        android:onClick="menuCompose"
+        android:showAsAction="ifRoom"
+        android:title="Settings" />
+>>>>>>> 7b862dd07ee6836d9a786a259ec2509dfd7b3664
 </menu>
